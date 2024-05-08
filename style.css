@@ -1,8 +1,9 @@
 * {
     border: none;
     /*border-radius: 5;*/
-    font-family: 'JetBrainsMonoNF-Regular', 'JetBrainsMono', 'Font Awesome 6 Free';
-    font-size: 9pt;
+    /*font-family: "Terminus (TTF)", Noto Sans CJK;*/
+    font-family: "Terminus (TTF)", JetBrainsMono;
+    font-size: 8pt;
     font-style: normal;
     font-weight: bold;
     min-height: 0;
@@ -37,12 +38,9 @@ window#waybar {
   border-radius: 0px;
 }
 
-#disk, #memory, #cpu, #temperature, #pulseaudio, #pulseaudio.microphone, #bluetooth, #custom-date, #clock, #hyprland-language, #network, #battery, #tray #custom-power {
+#custom-date, #disk, #clock, #cpu, #battery, #pulseaudio, #pulseaudio.microphone, #temperature, #memory, #bluetooth, #network, #custom-randwall {
 	background-color: black;
-	margin-top: 5px;
-    	padding: 0 5px;
-	border-radius: 5px;
-  	/*padding: 0px 10px 0px 10px;*/
+  padding: 0px 10px 0px 10px;
 	/*margin: 0px 5px 0px 5px;*/
   /*border-radius: 16px;*/
   /* border-bottom: solid 1px #EBDBB2; */
@@ -94,19 +92,35 @@ window#waybar {
     /*border-radius: 16px;*/
 }
 
+#backlight {
+    background-color: black;
+    color: #83A598;
+    /* border-bottom: solid 1px #EBDBB2; */
+    /*border-radius: 16px;*/
+    /*margin: 5px;*/
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding: 0px 5px 0px 5px;
+}
+
 #network {
-    color: #FB4934;
+    color: #AF3A03;
     /*border-radius: 16px;*/
     /*margin-right: 5px;*/
 }
 
 #pulseaudio {
-   /* color: #FABD2D;*/
-    color: #458588;
-    border-radius: 16px;
+    color: #FABD2D;
+    /*border-radius: 16px;*/
     margin-left: 0px;
 }
-
+#pulseaudio.microphone {
+    background-color: black;
+    color: #077869;
+    /*border-radius: 16px;*/
+    margin-left: 0px;
+}
 #pulseaudio.muted {
     background-color: black;
     color: #928374;
@@ -130,32 +144,20 @@ window#waybar {
   margin-bottom: 0px;
   font-weight: bold;
   font-style: italic;
-} 
+}
 
 #disk {
-	color: #fdae03;
-  }
+	color: #458588
+}
 
 #cpu {
-	color: #8f3f71;
- }
+	color: #98971a
+}
 
 #temperature {
-	color: #af3a03;
+	color: #FB4934;
  }
 
 #memory {
-	color: #98971a;
- }
-
-#custom-netusage,
-#network {
-	color: #d79921;
- }
-
-#pulseaudio.microphone {
-	color: #076678;
- }
-#hyprland-language {
-	color: #af3a03;
+	color: #98971A;
  }
